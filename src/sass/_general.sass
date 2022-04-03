@@ -31,27 +31,28 @@ header
 nav
 	border-bottom: 2px solid #F2F2F2
 	background-color: #fff
-	.menu
+.hamburger
+	display: none
+.menu
+	display: flex
+	justify-content: space-between
+	padding: 23px 0
+	&_logo
+		font-size: 18px
+	&_item
 		display: flex
 		justify-content: space-between
-		padding: 23px 0
-		&_logo
-			font-size: 18px
-		&_item
-			display: flex
-			justify-content: space-between
-			align-items: center
-			width: 421px
-			a
-				color: $main-color
-				&:hover
-					color: #00A4E5
-					font-weight: 700
-			&_link
-				text-decoration: none
-				font-size: 12px
-				font-weight: 600
-				letter-spacing: 1.09px
+		align-items: center
+		width: 421px
+		&_link
+			text-decoration: none
+			font-size: 12px
+			font-weight: 600
+			letter-spacing: 1.09px
+			color: $main-color
+			&:hover
+				color: #00A4E5
+				font-weight: 700
 h2
 	font-size: 18px
 	color: $main-color
@@ -73,16 +74,15 @@ h2
 		padding-top: 86px
 		&_deskr
 			text-align: left
+			width: 396px
 			&_header
 				font-size: 20px
 				font-weight: 700
 				color: $main-color
-				width: 396px
 			p
 				font-size: 13px
 				font-weight: 400
 				margin: 30px 0 0 0
-				width: 396px
 				color: $main-color
 		&_items
 			display: flex
